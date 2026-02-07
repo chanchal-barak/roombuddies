@@ -20,16 +20,13 @@ export default function Navbar() {
         onClick={() => navigate("/")}
         className="text-2xl font-bold cursor-pointer"
       >
-        Room<span className="text-purple-600">Buddies</span>
+        Co<span className="text-purple-600">Live</span>
       </h1>
 
       {/* Center Links */}
       <div className="hidden md:flex gap-10 text-sm font-medium">
 
-        <span
-          onClick={() => navigate("/")}
-          className={linkStyle("/")}
-        >
+        <span onClick={() => navigate("/")} className={linkStyle("/")}>
           Home
         </span>
 
@@ -46,11 +43,12 @@ export default function Navbar() {
         >
           Compatibility
         </span>
+
         <span
-            onClick={() => navigate("/matches")}
-            className={linkStyle("/matches")}
+          onClick={() => navigate("/matches")}
+          className={linkStyle("/matches")}
         >
-            Matches
+          Matches
         </span>
 
         <span
@@ -60,7 +58,6 @@ export default function Navbar() {
           Hostels
         </span>
 
-        {/* ✅ ADDED SAFETY */}
         <span
           onClick={() => navigate("/safety")}
           className={linkStyle("/safety")}
