@@ -62,55 +62,194 @@ export default function Home() {
           </button>
         </div>
       </section>
-
-      {/* ================= WHY CHOOSE ================= */}
-      <section className="px-20 py-24 bg-white text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
+      {/* ============== WHY CHOOSE ROOM BUDDIES ============= */}
+      <section className="px-20 py-28 bg-white text-center">
+        {/* Heading */}
+        <h2 className="text-6xl font-extrabold mb-6">
           Why Choose{" "}
           <span className="text-purple-600">Room Buddies?</span>
         </h2>
 
-        <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto mb-16">
-          Experience the future of roommate matching with our AI-powered platform designed specifically for women.
+        {/* Subtitle */}
+        <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-20">
+          Experience the future of roommate matching with our AI-powered platform designed specifically
+          for women.
         </p>
 
-        <div className="grid md:grid-cols-4 gap-10">
-          {[
-            {
-              icon: "🛡️",
-              title: "Women-Only Safety",
-              desc: "Verified profiles and background checks ensure a safe community.",
-            },
-            {
-              icon: "⚡",
-              title: "AI-Powered Matching",
-              desc: "Algorithms analyze compatibility based on lifestyle and habits.",
-            },
-            {
-              icon: "🎙️",
-              title: "Voice Preferences",
-              desc: "Speak your preferences instead of filling long forms.",
-            },
-            {
-              icon: "📍",
-              title: "Location-Based Search",
-              desc: "Find hostels and roommates in your preferred city.",
-            },
-          ].map((card, i) => (
-            <div
-              key={i}
-              className="bg-white p-8 rounded-3xl shadow-lg hover:-translate-y-3 hover:shadow-2xl transition duration-500"
-            >
-              <div className="w-14 h-14 mx-auto mb-6 flex items-center justify-center rounded-2xl bg-purple-50 text-3xl">
-                {card.icon}
-              </div>
+        {/* Cards */}
+        <div className="grid md:grid-cols-4 gap-12">
 
-              <h3 className="text-xl font-bold mb-3">{card.title}</h3>
-              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                {card.desc}
-              </p>
+          {/* Card 1 */}
+          <div className="bg-white rounded-[2.5rem] shadow-xl p-12 hover:-translate-y-3 transition duration-500">
+            <div className="w-16 h-16 mx-auto mb-8 flex items-center justify-center rounded-2xl bg-purple-50 text-3xl">
+              🛡️
             </div>
-          ))}
+
+            <h3 className="text-2xl font-bold mb-4">
+              Women-Only Safety
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              Verified profiles and background checks ensure a safe community.
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className="bg-white rounded-[2.5rem] shadow-xl p-12 hover:-translate-y-3 transition duration-500">
+            <div className="w-16 h-16 mx-auto mb-8 flex items-center justify-center rounded-2xl bg-purple-50 text-3xl">
+              ⚡
+            </div>
+
+            <h3 className="text-2xl font-bold mb-4">
+              AI-Powered Matching
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              Algorithms analyze compatibility based on lifestyle and habits.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white rounded-[2.5rem] shadow-xl p-12 hover:-translate-y-3 transition duration-500">
+            <div className="w-16 h-16 mx-auto mb-8 flex items-center justify-center rounded-2xl bg-purple-50 text-3xl">
+              🎙️
+            </div>
+
+            <h3 className="text-2xl font-bold mb-4">
+              Voice Preferences
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              Speak your preferences instead of filling long forms.
+            </p>
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-white rounded-[2.5rem] shadow-xl p-12 hover:-translate-y-3 transition duration-500">
+            <div className="w-16 h-16 mx-auto mb-8 flex items-center justify-center rounded-2xl bg-purple-50 text-3xl">
+              📍
+            </div>
+
+            <h3 className="text-2xl font-bold mb-4">
+              Location-Based Search
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              Find hostels and roommates in your preferred city.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      {/* ================= HOW IT WORKS SECTION ================= */}
+      <section className="px-20 pb-32 text-center">
+        <h2 className="text-6xl font-extrabold text-pink-500 mb-4">
+          How It Works
+        </h2>
+
+        <p className="text-gray-600 text-lg mb-20">
+          Simple, smart and secure steps to find your perfect roommate
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-12">
+
+          {/* Step 1 */}
+          <div className="bg-white rounded-[2.5rem] shadow-xl p-14 hover:-translate-y-3 transition">
+            <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-pink-500 to-purple-500 flex items-center justify-center text-white text-3xl font-bold">
+              1
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">
+              Share Your Preferences
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              Use voice input or fill out our smart compatibility quiz. Tell us about your lifestyle, habits, cleanliness, and roommate vibe.
+            </p>
+
+            <p className="mt-6 text-sm text-gray-500">
+              🎙 Voice Input • 🔒 Secure Profile
+            </p>
+          </div>
+
+          {/* Step 2 */}
+          <div className="bg-white rounded-[2.5rem] shadow-xl p-14 hover:-translate-y-3 transition">
+            <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center text-white text-3xl font-bold">
+              2
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">
+              Get Matched
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              Our AI analyzes compatibility across lifestyle, personality, budget, and safety preferences to suggest best matches.
+            </p>
+
+            <p className="mt-6 text-sm text-gray-500">
+              ⚡ AI Scoring • 📍 Location Filtering
+            </p>
+          </div>
+
+          {/* Step 3 */}
+          <div className="bg-white rounded-[2.5rem] shadow-xl p-14 hover:-translate-y-3 transition">
+            <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center text-white text-3xl font-bold">
+              3
+            </div>
+
+            <h3 className="text-2xl font-bold mt-8 mb-4">
+              Connect & Move In
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              Chat securely with your matches, explore verified PGs, and confidently move into a safe co-living space.
+            </p>
+
+            <p className="mt-6 text-sm text-gray-500">
+              💬 Messaging • 🏠 Verified PGs
+            </p>
+          </div>
+        </div>
+      </section>
+
+            {/* ================= WAITLIST SECTION ================= */}
+      <section className="px-20 pb-28">
+        <div className="max-w-5xl mx-auto bg-white/80 rounded-[3rem] shadow-2xl p-20 text-center">
+
+          <h2 className="text-5xl font-extrabold bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-clip-text text-transparent">
+            Ready to find your perfect match?
+          </h2>
+
+          <p className="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
+            Join the waitlist and be the first to experience AI-powered roommate matching in your city.
+          </p>
+
+          {/* Input + Button */}
+          <div className="mt-12 flex justify-center gap-4">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-[420px] px-6 py-4 rounded-full border border-gray-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-300"
+            />
+
+            <button
+              onClick={() => alert("Waitlist feature coming soon!")}
+              className="px-10 py-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-lg hover:scale-105 transition"
+            >
+              Join Waitlist
+            </button>
+          </div>
+
+          {/* Secure Private Free */}
+          <div className="mt-10 flex justify-center gap-8 text-gray-500 text-sm font-medium">
+            <span>🔒 SECURE</span>
+            <span>💜 PRIVATE</span>
+            <span>✨ FREE</span>
+          </div>
         </div>
       </section>
 
